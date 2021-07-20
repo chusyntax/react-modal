@@ -12,9 +12,9 @@ return(
             <img clasName="modalImg" src={require('./deals.jpg').default} alt="A Landscape" width="100%" height="100%"/>
           
             <div className="modalContent">
-                <h1>React Modal</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ipsa, repellat doloremque debitis ipsum illo voluptates recusandae rem nulla cupiditate ducimus quidem optio rerum expedita porro non sed? Harum repellat iste atque, labore odio vitae quisquam deserunt expedita architecto impedit!</p>
-                <p>Made with: React, XML, JQuery and The New York Times API</p>
+                <h1>{props.heading}</h1>
+               <p>{props.description}</p>
+               <p>{props.madeBy}</p>
                 <div className="buttonLayout">
                 <button className="innerModalButton">View Code</button>
                 <button className="innerModalButton">Live Site</button>
