@@ -16,8 +16,8 @@ return(
                <p>{props.description}</p>
                <p>{props.madeBy}</p>
                 <div className="buttonLayout">
-                <button className="innerModalButton">View Code</button>
-                <button className="innerModalButton">Live Site</button>
+                <button className="innerModalButton"><a href={props.viewCode} target="_blank" rel="noreferrer">View Code</a></button>
+                <button className="innerModalButton"><a href={props.viewSite} target="_blank" rel="noreferrer">Live Site</a></button>
                 </div>
             </div>
             <button className="closeModalButton" aria-label="Close modal" onClick={()=> props.setShowModal(prev => !prev)}>Close</button>
